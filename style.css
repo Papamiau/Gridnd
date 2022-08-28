@@ -1,0 +1,44 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.item {
+    display: grid;
+    justify-content:space-around;
+    align-items: center;
+    font-size: 1,2em;
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    background:lightblue;
+    
+}
+
+.grid {
+    display: grid;
+    grid-template-areas: 
+    "first second second" 
+    "first third fourth";
+    grid-auto-rows: 200px;
+    grid-template-columns: 500px 250px 250px;
+    gap: 20px;
+    margin-top: 40px;
+}
+
+.grid .item:nth-of-type(1){
+    grid-area: first;
+   
+    
+}
+
+.grid .item:nth-of-type(2){
+    grid-area: second;
+}
+
+.grid .item:nth-of-type(3){
+    grid-area: third;
+}
+
+.grid .item:nth-of-type(4){
+    grid-area: fourth;
+}
